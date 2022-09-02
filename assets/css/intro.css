@@ -1,0 +1,203 @@
+#intro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    gap: 110px;   
+}
+
+#intro h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+#intro p {
+    padding: 40px 0 35px;
+    margin: 0;
+}
+
+#intro p strong {
+    font-weight: 600;
+}
+
+#intro form {
+    padding: 5px;
+    border: 1px solid var(--bg-color-footer);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;    
+    max-width: 594px;
+    width: fit-content;
+    position: relative;
+}
+
+#intro form::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 272px;
+    width: 1px;
+    height: 40px;
+    background-color: var(--bg-color-footer);
+
+}
+
+#intro form i {
+    font-size: 1.2rem;
+    color: var(--fc-primary);
+    padding: 0 15px 0 10px;
+}
+
+#intro form input, 
+#intro form select {
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+}
+
+#intro form input {
+    max-width: 222px;
+}
+
+#intro form input::placeholder {
+    color: var(--bg-color-footer);
+}
+
+#intro form select {
+    width: 135px;
+    margin-right: 29px;      
+}
+
+#intro form input:focus, 
+#intro form select:focus {
+    outline: none;
+}
+
+#intro form button {
+    padding: 15px 41px;
+    color: var(--btn-2-color);    
+    background-color: var(--btn-2-bg-color);    
+    border: none;
+    border-radius: 25px;
+    transition: background-color .5s ease;
+}
+
+#intro form button:hover {
+    background-color: var(--btn-2-bg-color-hover);
+}
+
+#intro .video-box {     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro .video-box img {    
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    max-width: 1000px; 
+    border: 10px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 36px -15px #818181;       
+    transition: transform .5s ease;
+}
+
+#intro .video-box .btn-start {        
+    padding: 64px 63px 64px 68px ;
+    border-radius: 50%;    
+    color: var(--btn-2-bg-color);
+    background-color: #fff;
+    position: absolute;    
+    transition: transform .5s ease;
+}
+
+#intro .video-box:hover img,
+#intro .video-box:hover .btn-start {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1599.98px) {
+
+    #intro div:last-child {
+        grid-row: 2;
+    }
+
+}
+
+@media screen and (max-width: 1199.98px) {
+
+    #intro h1,
+    #intro p,
+    #intro strong,
+    #intro form input,
+    #intro form select,
+    #intro form i {
+        color: #fff;
+    }
+
+    #intro form {        
+        border: 3px solid #fff
+    }
+
+    #intro form::before {
+        width: 2px;
+        background-color: #fff;
+    }
+
+    #intro form input, 
+    #intro form select {
+        font-weight: 600;
+    }
+
+    #intro form input::placeholder {
+        color: rgba(255, 255, 255, .75);
+    } 
+
+    #intro form select option {
+        background-color: var(--btn-2-bg-color);
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {
+
+    #intro h1 {
+        font-size: 2.5rem;
+    }
+
+    #intro form {
+        max-width: none;
+        padding: 15px;        
+    }
+
+    #intro form::before {
+        content: none;
+    }
+
+    #intro form input {
+        width: 300px;
+    }
+
+    #intro form select,
+    #intro form button {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 575.98px) {
+    
+    #intro p {
+        line-height: 2rem;
+    }
+
+    #intro form i {
+        padding: 0 10px 0 5px;
+        font-size: 1rem;
+    }
+
+    #intro .video-box .btn-start {
+        padding: 34px 33px 34px 38px;
+    }
+
+}

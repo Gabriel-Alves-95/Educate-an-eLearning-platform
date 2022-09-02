@@ -1,0 +1,95 @@
+#join-us {    
+    background-color: var(--bg-color-registration);
+    padding: 95px 105px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1285px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#join-us .text {
+    max-width: 495px;      
+}
+
+#join-us .text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#join-us .text p {
+    margin: 0;
+    opacity: .5;
+}
+
+#join-us .text h2,
+#join-us .text p {
+    color: var(--bg-color-primary);  
+}
+ 
+#join-us button {
+    width: 250px;
+    height: 75px;    
+    background-color: var(--btn-2-bg-color);
+    border-radius: 15px;
+    color: var(--bg-color-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: auto 0;
+    transition: all .3s ease;
+}
+
+#join-us button:hover {
+    letter-spacing: 3px;
+    box-shadow: 0 0 25px var(--bg-color-primary);
+}
+
+@media screen and (max-width: 1199.98px) {
+
+    #join-us {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    #join-us .text {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {
+
+    #join-us {
+        padding: 65px;
+    }
+
+    #join-us .text h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 575.98px) {
+
+    #join-us {
+        padding: 50px 25px;
+    }
+
+    #join-us .text h2 {
+        font-size: 2rem;
+    }
+
+    #join-us .text p {
+        font-size: .9rem;
+    }
+
+    #join-us button {
+        font-size: 1.3rem;
+        width: 230px;
+    }
+
+}

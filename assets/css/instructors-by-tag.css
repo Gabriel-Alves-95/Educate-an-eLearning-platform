@@ -1,0 +1,146 @@
+#instructors-by-tag {    
+    padding: 90px 0 80px;       
+}
+
+#instructors-by-tag .coursesByCategory {
+    margin: 56px auto 42px;
+    width: calc(100% - 60px);
+    max-width: 1142px;
+}
+
+#instructors-by-tag .coursesByCategory div {
+    margin: 0 22.5px;
+}
+
+#instructors-by-tag .coursesByCategory .slick-prev::before,
+#instructors-by-tag .coursesByCategory .slick-next::before {
+    font-family: "Font Awesome 6 Free";    
+    color: var(--fc-primary);    
+    font-weight: 900;
+    opacity: 1;  
+}
+
+#instructors-by-tag .coursesByCategory .slick-prev::before {
+    content: "\f104";
+}
+
+#instructors-by-tag .coursesByCategory .slick-next::before {    
+    content: "\f105";    
+}
+
+#instructors-by-tag .slick-slide.slick-current.slick-active {    
+    font-weight: 600;
+}
+
+#instructors-by-tag h3 {
+    margin: 65px 0 35px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#instructors-by-tag .accordion-item .accordion-body {
+    padding: 0;    
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));    
+    margin-bottom: 40px;
+}
+
+#instructors-by-tag .instructor-card {        
+    padding: 25px;
+    background-color: var(--bg-color-primary);
+    border-radius: 10px;      
+    display: grid;
+    grid-template-columns: 80px calc(100% - 110px);
+    gap: 30px;    
+}
+
+#instructors-by-tag .instructor-card .instructor-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;    
+    background-color: var(--bg-color-footer);
+
+
+    /*  TODO: EXCLUDE THESE SETTINGS WHEN YOU GET PROFILE PHOTOS */
+
+        color: var(--bg-color-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .65;
+
+    /* END OF EXCLUSION HERE */
+}
+
+#instructors-by-tag .instructor-card .instructor-info h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#instructors-by-tag .instructor-card .instructor-info h5 {
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+#instructors-by-tag .instructor-card .instructor-info .instructor-rating {
+    margin: 15px 0 12px;
+    color: var(--fc-ratings);
+}
+
+#instructors-by-tag .instructor-card .instructor-info .instructor-rating span {
+    color: inherit;
+}
+
+#instructors-by-tag .instructor-card .instructor-info .instructor-rating i {
+    margin: 0 10px;
+}
+
+#instructors-by-tag .instructor-card .instructor-info .instructor-statistics .number-of-students {
+    display: inline-block;    
+    padding-right: 10px;    
+    position: relative;
+}
+
+#instructors-by-tag .instructor-card .instructor-info .instructor-statistics .number-of-students::before {
+    content: '';
+    position: absolute;
+    right: -4.5px;
+    top: 9.5px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--fc-secondary);
+}
+
+#instructors-by-tag .instructor-card .instructor-info .instructor-statistics .number-of-courses {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#instructors-by-tag .instructor-card .instructor-info .instructor-statistics span {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 575.98px) {
+
+    #instructors-by-tag .accordion-item .accordion-body {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #instructors-by-tag .instructor-card {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    #instructors-by-tag .instructor-card .instructor-img {
+        width: 100%;
+        height: 120px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+}
+
+

@@ -1,0 +1,135 @@
+#students-testimonials {
+    position: relative;
+    margin: 125px 0;
+}
+
+#students-testimonials .container {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    justify-items: end;
+    align-items: end;
+    gap: 50px;
+}
+
+#students-testimonials h2 {
+    font-weight: 600;    
+    margin-top: 40px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+/* #carouselStudentsTestimonials .carousel-item {
+    opacity: 0;
+    transition: opacity .2s ease-in, 0.6s ease-in-out left;
+}
+
+#carouselStudentsTestimonials .carousel-item.active {
+    opacity: 1;
+} */
+
+
+
+
+#carouselStudentsTestimonials .carousel-indicators {
+    position: unset;
+    display: block;
+    margin: 30px 0 1rem;
+}
+
+#carouselStudentsTestimonials .carousel-indicators button {    
+    width: 60px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: var(--bootstrap-carousel-btn-inactive);
+}
+
+#carouselStudentsTestimonials .carousel-indicators .active {
+    background-color: var(--bootstrap-carousel-btn-active);
+}
+
+.testimonial-card {
+    font-size: 1.25rem;
+}
+
+.testimonial-card .testimonial-title,
+.testimonial-card .student-name {    
+    font-weight: 600;    
+}
+
+.testimonial-card .testimonial-text {
+    margin: 35px 0 50px;
+}
+
+#students-testimonials #student-image {
+    height: 100%;
+    min-height: 560px;
+    width: 465px;
+    border-radius: 15px;
+    background-color: var(--bg-color-footer);
+    /* position: absolute;
+    right: 0; */
+
+    /* TODO: --BEGIN: TAKE ALL THESE SETTINGS OUT WHEN WE HAVE THE IMAGES!!! */
+        
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        color: var(--bg-color-primary);
+        font-size: 3rem;       
+
+    /* --END */
+}
+
+
+
+
+
+
+#students-testimonials .animate__fadeInRight, 
+#students-testimonials .animate__fadeOutRight {
+    animation-duration: .5s;
+}
+
+
+
+
+
+@media screen and (max-width: 1199.98px) {
+
+
+    #students-testimonials h2 {
+        position: unset;
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+    
+
+    #students-testimonials #student-image {
+        min-height: unset;
+        width: 370px;
+    }
+
+}
+
+@media screen and (max-width: 991.98px) {
+
+    #students-testimonials .container {
+        grid-template-columns: unset;
+        grid-template-rows: repeat(2, auto);    
+    }
+
+
+    #students-testimonials #student-image {
+        height: 300px;
+        width: 100%;
+        grid-row: 1;
+    }
+
+
+}

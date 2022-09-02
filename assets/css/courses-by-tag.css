@@ -1,0 +1,163 @@
+#courses-by-tag {
+    padding: 130px 0 120px;
+}
+
+#courses-by-tag h2 {
+    padding-bottom: 70px;
+}
+
+#courses-by-tag .slick-prev {
+    left: 0;
+    z-index: 1;  
+}
+  
+#courses-by-tag .slick-next {
+    right: 0;
+}
+
+#courses-by-tag .accordion-item .accordion-body {    
+    grid-template-columns: repeat(auto-fill, minmax(0, 400px));    
+    justify-content: center;
+}
+
+#courses-by-tag .card {
+    width: 100%;    
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px var(--bg-color-footer); 
+}
+
+#courses-by-tag .card-img-top {    
+    width: 100%;
+    height: 210px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+    margin-bottom: 10px;
+
+
+
+    /* TODO: EXCLUDE THESE SETTINGS WHEN YOU GET PROFILE PHOTOS!!! */
+
+    color: var(--bg-color-primary);
+    background-color: var(--bg-color-footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .65;
+
+    /* END OF EXCLUSION HERE */
+}
+
+#courses-by-tag .card .course-tag {
+    padding: 8px 15px 5px;    
+    border-radius: 16px;
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--btn-1-color);
+    background-color: var(--btn-1-bg-color);
+}
+
+#courses-by-tag .card .course-title{
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#courses-by-tag .card .students-avaliation,
+#courses-by-tag .card .course-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#courses-by-tag .card .students-avaliation .rating span {
+    color: var(--fc-ratings);
+}
+
+#courses-by-tag .card .students-avaliation .total-of-students span {
+    font-weight: 600;
+}
+
+#courses-by-tag .card .course-info {    
+    font-weight: 600;    
+}
+
+#courses-by-tag .card .course-info .duration i {
+    color: var(--icon-time-color);
+}
+
+#courses-by-tag .card .course-info .number-of-lectures i {
+    color: var(--icon-calendar--color);
+}
+
+#courses-by-tag .card .course-info .course-level i {
+    color: var(--icon-level-color);
+    position: relative;
+}
+
+#courses-by-tag .card .instructor-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px 0 20px;
+    border-top: 2px solid var(--footer-border-color);
+}
+
+#courses-by-tag .card .instructor-info .instructor-img {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+
+
+
+
+    /* TODO: EXCLUDE THESE SETTINGS WHEN YOU GET PROFILE PHOTOS!!! */
+
+    color: var(--bg-color-primary);
+    background-color: var(--bg-color-footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .65;
+
+    /* END OF EXCLUSION HERE */    
+}
+
+#courses-by-tag .card .instructor-info .instructor-name {
+    font-weight: 600;
+}
+
+#courses-by-tag .card .instructor-info .price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--icon-time-color);    
+}
+
+#courses-by-tag .card .options {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#courses-by-tag .card .options a {
+    width: 100%;
+}
+
+#courses-by-tag .card .options .btn:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 575.98px) { 
+
+    #courses-by-tag .card .course-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #courses-by-tag .card .instructor-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,3 @@
+#alumni > .container-fluid:first-child {
+    background-color: var(--bg-color-secondary);
+}

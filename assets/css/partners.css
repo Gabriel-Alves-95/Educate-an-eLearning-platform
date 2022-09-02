@@ -1,0 +1,112 @@
+#partners {
+    padding: 25px 80px 15px 75px;
+    margin: 165px 0 100px;
+    border-top: 1px solid var(--bg-color-footer);
+    border-bottom: 1px solid var(--bg-color-footer);       
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+#partners .partners-text {
+    text-align: center;
+    white-space: nowrap;
+    padding-right: 80px;
+    margin: auto 0;
+    position: relative;
+}
+
+#partners .partners-text::before {
+    content: '';
+    position: absolute;
+    height: 65px;
+    width: 1px;
+    background-color: var(--bg-color-footer);    
+    top: calc((100% - 65px)/2);
+    right: 0;    
+}
+
+#partners .partners-text .number {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+#partners .partners-text .text {
+    color: var(--fc-companies);
+    font-weight: 500;
+}
+
+#partners .partners-logos {
+    display: flex;  
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 15px;
+}
+
+#partners .partners-logos .logo-container {
+    width: 190px;
+    text-align: center;
+    margin: auto 0;
+}
+
+@media screen and (max-width: 1599.98px) {
+
+    #partners .partners-logos {
+        gap: 40px 60px;
+    }
+
+}
+
+@media screen and (max-width: 1199.98px) {
+
+    #partners {
+        gap: 50px;
+    }
+
+    #partners .partners-text {
+        padding-right: 60px;        
+    }
+
+}
+
+
+@media screen and (max-width: 991.98px) {
+
+    #partners {
+        padding: 25px 0 15px;
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {
+
+    #partners {
+        grid-template-columns: 1fr;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #partners .partners-text {
+        padding: 0;       
+    }
+
+    #partners .partners-text::before {
+        top: unset;
+        bottom: -20px;
+        left: 46.5px;
+        height: 1px;
+        width: 65px;
+    }
+    
+}
+
+
+@media screen and (max-width: 575.98px) {
+
+    #partners {
+        padding: 50px 20px 40px 20px;
+    }
+
+}

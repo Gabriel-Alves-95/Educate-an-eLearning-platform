@@ -1,0 +1,60 @@
+#highlighted-students {
+    margin: 105px 0 125px;
+    display: flex;     
+}
+
+#highlighted-students img {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    left: -65px;
+}
+
+#highlighted-students .section-text {
+    margin: auto 90px auto 70px;
+} 
+
+#highlighted-students .section-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+#highlighted-students .section-text p {
+    margin: 50px 0;
+    line-height: 2rem;
+}
+
+#highlighted-students .section-text .btn:hover {
+    color: #fff;
+}
+
+#highlighted-students .section-text .btn:focus {
+    box-shadow: none;
+    color: #fff; 
+}
+
+
+@media screen and (max-width: 1599.98px) {
+
+    #highlighted-students {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+       gap: 100px;       
+    }
+
+    #highlighted-students img {
+        left: 0;
+    }
+
+    #highlighted-students .section-text {
+        margin: 0;
+        text-align: center;
+    }
+
+    #highlighted-students .section-text p {
+        text-align: left;
+    }
+
+}
+

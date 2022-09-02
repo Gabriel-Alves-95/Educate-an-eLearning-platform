@@ -1,0 +1,234 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 57px;
+    width: 100%;
+    max-width: 1285px;
+    margin: 110px 0 40px;
+}
+
+footer .logo-and-social-media {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+footer .logo-and-social-media p {
+    width: 325px;    
+}
+
+footer .logo-and-social-media .social-media a:hover i,
+footer .logo-and-social-media .social-media a:active i {
+    box-shadow: 0px 0px 10px var(--fc-companies);
+    transition: box-shadow .3s ease;
+}
+
+footer .logo-and-social-media .social-media a:nth-child(2) {
+    margin: 0 20px;
+}
+
+footer .logo-and-social-media .social-media i {
+    padding: 10px;
+    color: var(--footer-fc-icons);
+    background-color: var(--footer-bg-color-icons);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    transition: box-shadow .3s ease;
+}
+
+footer nav {    
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;    
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0 !important;
+    /* margin: 0 !important; */
+}
+
+footer nav ul li {
+    
+    display: flex;
+    justify-content: stretch;
+}
+
+footer nav ul li h2 {
+    font-size: 1.45rem;
+    margin-bottom: 43px;
+}
+
+footer nav ul li a {
+    padding: 13px 0;
+    width: 100%;
+}
+
+footer nav ul:last-child li a img {
+    transition: transform .3s ease;
+}
+
+footer nav ul:last-child li a:hover img {
+    transform: scale(1.1);    
+}
+
+footer .copyright-and-payment {    
+    padding-top: 40px;
+    border-top: 1px solid var(--footer-border-color);
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    gap: 30px 100px;
+}
+
+footer .copyright-and-payment p {
+    margin: 0;    
+}
+
+footer > .copyright-and-payment > p {
+    font-size: .75rem;
+    color: var(--footer-fc-secondary);
+}
+
+footer > .copyright-and-payment > .payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+footer > .copyright-and-payment > .payment > p {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1599.98px) {
+
+    footer {
+        grid-template-columns: repeat(1, auto); 
+        gap: 90px;       
+    }
+
+    footer .logo-and-social-media {        
+        grid-template-columns: repeat(3, auto);
+        align-items: start;
+    }
+
+    footer .logo-and-social-media p {        
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer .logo-and-social-media .social-media {
+        text-align: right;
+    }
+
+    footer nav {
+        flex-wrap: wrap;        
+    }
+
+    footer nav ul {
+        width: 210px;
+    }
+
+}
+
+@media screen and (max-width: 991.98px) {
+
+    footer .logo-and-social-media {
+        grid-template-columns: repeat(2, auto);
+        gap: 60px 0;
+    }
+
+    footer .logo-and-social-media p {
+        width: 167px;
+        margin: 0 0 0 auto;
+        text-align: right;
+    }
+    
+
+    footer .logo-and-social-media .social-media {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    footer nav {
+        gap: 50px;        
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {
+
+    footer > .copyright-and-payment > .payment {
+        flex-wrap: wrap;     
+    }
+
+    footer > .copyright-and-payment > .payment > p {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 575.98px) { 
+
+    footer {
+        gap: 50px;
+    }
+
+    footer .logo-and-social-media {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    footer .logo-and-social-media p {
+        width: auto;
+        max-width: 325px;   
+        margin: 0;
+        text-align: left;
+    }    
+
+    footer .logo-and-social-media .social-media {        
+        text-align: left;
+    }
+
+    footer > .copyright-and-payment {
+        justify-content: center;
+    }
+
+    footer > .copyright-and-payment > .payment {     
+        justify-content: center;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1162.98px) and (min-width: 887.98px) {
+
+    #app-download-links {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 627.98px) and (min-width: 575.98px) {
+
+    #app-download-links {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 539.98px) {
+
+    #app-download-links {
+        margin: 0 auto;
+    }
+
+}

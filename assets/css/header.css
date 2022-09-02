@@ -1,0 +1,350 @@
+header {
+    width: 100%;
+    max-width: 1285px;
+    padding: 0 40px;
+    margin: 40px 0 120px;    
+    background-color: var(--bg-color-primary);
+    box-shadow: 0 0 36px -15px #818181;
+    border-radius: 15px;
+    display: flex;   
+    justify-content: start;    
+    position: relative;
+    z-index: 1;
+}
+
+header > .spacer {
+    width: 143px;
+}
+
+header nav {
+    width: calc(100% - 244.86px);
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;    
+    display: flex;    
+    justify-content: space-between; 
+}
+
+header ul .navigation-options,
+header ul .account-options {
+    display: flex;
+    background-color: #fff;
+}
+
+header ul .account-options{
+    position: relative;    
+    margin-left: 25px;
+}
+
+header ul .account-options::before{
+    content: '';
+    position: absolute;
+    top: calc(16px);
+    left: 0;    
+    height: 54px;
+    width: 1px;
+    background-color: var(--bg-color-footer);
+}
+
+header ul li {
+    display: flex;
+    justify-content: stretch; 
+    position: relative;   
+}
+
+header ul li a {
+    padding: 31px 15px;
+}
+
+header ul .navigation-options li a::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--fc-companies);
+    opacity: 0;    
+    animation: .5s ease-out 0s dot-goes-to-left;
+}
+
+header ul .navigation-options li a::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--fc-ratings);
+    opacity: 0;    
+    animation: .5s ease-out 0s dot-goes-to-right;
+}
+
+header ul .navigation-options li a:hover::before,
+header ul .navigation-options li a:active::before {
+    animation: .5s ease-out 0s dot-comes-from-left;
+    animation-fill-mode: forwards;
+}
+
+header ul .navigation-options li a:hover::after,
+header ul .navigation-options li a:active::after {
+    animation: .5s ease-out 0s dot-comes-from-right;
+    animation-fill-mode: forwards;
+}
+
+header ul .account-options li .btn {
+    --bs-btn-focus-box-shadow: 0 0 0 transparent;
+}
+
+header ul .account-options li:first-child button {
+    padding: 31px 15px;
+    margin: 0 25px;
+    background-color: transparent;
+    border: none;
+    text-shadow: 0 0 1px transparent;
+}
+
+header ul .account-options li:first-child button:hover {
+    text-shadow: 0 0 1px var(--fc-primary);
+}
+
+header ul .account-options li:last-child button {
+    height: fit-content;
+    margin: auto 0;    
+    padding: 10px 20px;
+    color: var(--btn-1-color);
+    background-color: transparent;    
+    border: 1px solid var(--btn-1-color);   
+    border-radius: 15px;
+    transition: background-color .5s ease;
+}
+
+header ul .account-options li:last-child button:hover,
+header ul .account-options li:last-child button:active {    
+    background-color: var(--btn-1-bg-color);
+}
+
+header nav .sandbar {
+    font-size: 1.2rem;
+    color: var(--btn-1-color);
+    padding: 5px 10px;
+    border: 1px solid var(--btn-1-color);
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    right: 295px;
+    top: 22.6px;
+    transition: background-color .5s ease;
+}
+
+header nav .sandbar-active {
+    background-color: var(--btn-1-bg-color);    
+}
+
+header nav #exampleModal {
+    padding: 0 !important;
+}
+
+@keyframes dot-comes-from-right {
+    from {              
+        right: 15px;
+    }
+    to {
+        opacity: 1;
+        right: calc(50% - 7px);
+    }
+}
+
+@keyframes dot-goes-to-right {
+    from {
+        opacity: 1;
+        right: calc(50% - 7px);
+    }
+    to {        
+        right: 15px;
+    }
+}
+
+@keyframes dot-comes-from-left {
+    from {
+        left: 15px;
+    }
+    to {
+        opacity: 1;
+        left: calc(50% - 7px);
+    }
+}
+
+@keyframes dot-goes-to-left {
+    from {
+        opacity: 1;
+        left: calc(50% - 7px);
+    }
+    to {        
+        left: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1419.98px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    header nav {
+        width: 782.13px;
+    }
+
+    header .spacer {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1199.98px) {
+
+    .sandbar {
+        position: absolute;
+        right: 0;
+        display: block;
+    }
+
+    header nav {
+        width: fit-content;
+    }
+
+    .animate-navbar {
+        left: 0 !important;
+        opacity: 1 !important;        
+        transition: left .5s ease-out, opacity .3s ease-in .2s !important;
+    }
+
+    header nav .sandbar {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 1199.98px) and (min-width: 767.98px) {
+
+    header ul .navigation-options {
+        padding: 0 20px;        
+        border-radius: 15px;
+        box-shadow: 0 0 36px -15px #818181;
+        position: absolute;                
+        top: 130px;
+        left: -340px;
+        opacity: 0;
+        transition: left .5s ease-in, opacity .3s ease-out;
+    }
+
+    header ul .navigation-options ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+ 
+    header ul .navigation-options li a {        
+        padding: 20px 15px;
+        width: 100%;
+    }
+
+    header ul .navigation-options li a::before,
+    header ul .navigation-options li a::after {
+        content: none; 
+    }
+
+    header ul .navigation-options li a:hover {
+        transform: translateX(15px);
+        transition: transform .5s ease;
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {
+
+    header {
+        height: 86px;
+    }   
+
+    header > nav > ul {
+        padding: 10px 20px;        
+        border-radius: 15px;
+        box-shadow: 0 0 36px -15px #818181;
+        position: absolute;        
+        display: block;
+        top: 130px;
+        left: -340px;
+        opacity: 0;
+        transition: left .5s ease-in, opacity .3s ease-out;
+    }   
+
+    header > nav > ul > li:last-child {
+        display: block;
+    }
+
+    header ul .navigation-options,
+    header ul .account-options {
+        margin: 0;
+    }
+
+    header ul .navigation-options ul,
+    header ul .account-options ul {        
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        margin: 0 !important;                
+        padding: 20px 15px !important;        
+        width: 100%;
+    }
+
+    header nav ul .account-options::before,
+    header nav ul li a::before,
+    header nav ul li a::after {
+        content: none !important; 
+    }
+
+    header nav ul li a:hover {
+        transform: translateX(15px);
+        transition: transform .5s ease;
+    }
+    
+    header nav ul .account-options ul li:first-child button {    
+        margin: 0;
+        padding: 20px 15px;
+    }
+
+    header nav ul .account-options ul li:first-child button:hover {
+        transform: translateX(15px);
+        transition: transform .5s ease;
+    }
+
+    header nav ul .account-options ul li:last-child button {
+        width: 100%;
+    }
+
+    header nav .sandbar {        
+        right: 40px;
+    }
+    
+}
+
+@media (max-width: 575.98px) {
+
+    header {
+        padding: 0 20px;
+    }    
+
+    header nav .sandbar {
+        right: 20px;
+    }
+
+}

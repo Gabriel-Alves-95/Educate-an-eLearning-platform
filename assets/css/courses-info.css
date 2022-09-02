@@ -1,0 +1,68 @@
+#courses-info > .container-fluid:first-child {
+    background-color: var(--bg-color-secondary);
+}
+
+#courses-info section {
+    flex-direction: column; 
+}
+
+#courses-info section h2 {
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+#courses-info .accordion-item {
+    background-color: transparent;
+    border: none;
+}
+
+#courses-info .accordion-item .accordion-body {
+    padding: 0;
+    display: grid;    
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+#courses-info .accordion-button {
+    width: fit-content;
+    background-color: transparent;
+    margin: 65px auto 0;
+}
+
+#courses-info .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#courses-info .accordion-button::after {    
+    padding: 20px 45px;    
+    height: fit-content;
+    width: fit-content;  
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--btn-1-color);
+    background-color: var(--btn-1-bg-color);
+    border: 1px solid var(--btn-1-color);
+    border-radius: 15px;
+    background-image: none;
+    white-space: nowrap;
+}
+
+#courses-info .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#courses-info .accordion-button:not(.collapsed)::after {    
+    background-image: none;
+    transform: none;
+}
+
+#courses-info .accordion-button.collapsed.accordion-button::after {
+    content: "View All";
+}
+
+#courses-info .accordion-button::after {    
+    content: "Show Less";
+}
