@@ -34,7 +34,26 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              In the future, I will add a login/register form here.
+                <form>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="john-doe@educate.com" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword">
+                      </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="agreement">
+                      <label class="form-check-label" for="agreement">I agree with Educate's <a href="#">Terms Of Service</a> and <a href="#">Policy</a>.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -189,11 +208,11 @@
             <div class="container-fluid">
                 <div class="horizontal-padding">
                     <section class="custom-section" id="instructors-by-tag">
+
                         <h2>Our courses</h2>    
 
                         <div class="coursesByCategory">                                                                                 
-                            <div>Most Popular</div>
-                            <div>Free Courses</div> 
+                            <div>Most Popular</div>                            
                             <div>Food</div>
                             <div>Arts & Entertainment</div>
                             <div>Sports & Games</div>
@@ -209,7 +228,7 @@
                             <div>Biology</div>     
                         </div>
 
-                        <h3>
+                        <h3 class="placeholder-glow">
                             Instructors in 
                             <span>Most Popular</span>
                         </h3>
@@ -218,70 +237,6 @@
                             <div class="accordion-item">                              
                                 <div id="collapseOne">
                                     <div class="accordion-body">
-
-                                        <div class="instructor-card">
-                                            <div class="instructor-img"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="instructor-info">
-                                                <h4>John Doe</h4>
-                                                <h5>Web Developer</h5>
-                                                <div class="instructor-rating">
-                                                    <span>4.5</span>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <span>Instructor Rating</span>
-                                                </div>
-                                                <div class="instructor-statistics">
-                                                    <div class="number-of-students">
-                                                        <span>15.264</span> Students
-                                                    </div>                                                   
-                                                    <div class="number-of-courses">
-                                                        <span>10</span> Courses
-                                                    </div>                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="instructor-card">
-                                            <div class="instructor-img"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="instructor-info">
-                                                <h4>John Doe</h4>
-                                                <h5>Web Developer</h5>
-                                                <div class="instructor-rating">
-                                                    <span>4.5</span>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <span>Instructor Rating</span>
-                                                </div>
-                                                <div class="instructor-statistics">
-                                                    <div class="number-of-students">
-                                                        <span>15.264</span> Students
-                                                    </div>                                                   
-                                                    <div class="number-of-courses">
-                                                        <span>10</span> Courses
-                                                    </div>                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="instructor-card">
-                                            <div class="instructor-img"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="instructor-info">
-                                                <h4>John Doe</h4>
-                                                <h5>Web Developer</h5>
-                                                <div class="instructor-rating">
-                                                    <span>4.5</span>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <span>Instructor Rating</span>
-                                                </div>
-                                                <div class="instructor-statistics">
-                                                    <div class="number-of-students">
-                                                        <span>15.264</span> Students
-                                                    </div>                                                   
-                                                    <div class="number-of-courses">
-                                                        <span>10</span> Courses
-                                                    </div>                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
                                     </div>
                                     <h6 class="accordion-header"></h6>
                                 </div>                              
@@ -289,196 +244,33 @@
                             <div class="accordion-item">                              
                                 <div id="collapseTwo" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-
-                                        <div class="instructor-card">
-                                            <div class="instructor-img"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="instructor-info">
-                                                <h4>John Doe</h4>
-                                                <h5>Web Developer</h5>
-                                                <div class="instructor-rating">
-                                                    <span>4.5</span>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <span>Instructor Rating</span>
-                                                </div>
-                                                <div class="instructor-statistics">
-                                                    <div class="number-of-students">
-                                                        <span>15.264</span> Students
-                                                    </div>                                                   
-                                                    <div class="number-of-courses">
-                                                        <span>10</span> Courses
-                                                    </div>                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="instructor-card">
-                                            <div class="instructor-img"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="instructor-info">
-                                                <h4>John Doe</h4>
-                                                <h5>Web Developer</h5>
-                                                <div class="instructor-rating">
-                                                    <span>4.5</span>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <span>Instructor Rating</span>
-                                                </div>
-                                                <div class="instructor-statistics">
-                                                    <div class="number-of-students">
-                                                        <span>15.264</span> Students
-                                                    </div>                                                   
-                                                    <div class="number-of-courses">
-                                                        <span>10</span> Courses
-                                                    </div>                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                                                            
-                                        
                                     </div>
                                 </div>
                                 <h6 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"></button>
                                 </h6>
                             </div>                            
-                        </div>                
-                    </section>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="spinner-border text-primary spinner-custom" style="width: 3rem; height: 3rem;" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>                                       
+                    </section>                    
                 </div>
             </div>            
             <div class="container-fluid">
                 <div class="horizontal-padding">
                     <section class="custom-section" id="courses-by-tag">
-                        <h2>
+                        <h2 class="placeholder-glow">
                             Our
                             <span>Most Popular</span>
                             Courses
-                        </h2>
+                        </h2>                                                
                         <div class="accordion" id="courses-accordion">
                             <div class="accordion-item">                              
                                 <div id="collapseThree">
-                                    <div class="accordion-body">
-                                        
-                                        <div class="card">
-                                            <div class="card-img-top"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="card-body">                                                
-                                                <span class="course-tag">Tag</span>
-                                                <h5 class="course-title">Nameless</h5>                                                
-                                            </div>
-                                            <div class="card-body students-avaliation">
-                                                <div class="rating"> 
-                                                    <span>
-                                                        4.5
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    (1.250)
-                                                </div>
-                                                <div class="total-of-students">
-                                                    <span>5.400</span>
-                                                    Students
-                                                </div>
-                                            </div>
-                                            <div class="card-body course-info">
-                                                <div class="duration"><i class="fa-regular fa-clock"></i> 11h 20min</div>
-                                                <div class="number-of-lectures"><i class="fa-solid fa-calendar-days"></i> 46 Lectures</div>
-                                                <div class="course-level"><i class="fa-sharp fa-solid fa-signal"></i> Advanced </div>
-                                            </div>
-                                            <div class="card-body instructor-info">                                                
-                                                <div class="instructor-img">
-                                                    <i class="fa-solid fa-ban"></i>
-                                                </div>
-                                                <div class="instructor-name">John Doe</div>                                                                                              
-                                                <div class="price">$1.99</div>
-                                            </div>
-                                            <div class="options">
-                                                <a href="#" target="_blank" class="btn btn-outline-primary">
-                                                    More Info
-                                                </a>
-                                                <a href="#" target="_blank" class="btn btn-outline-danger">
-                                                    Buy Course    
-                                                </a>
-                                            </div>                                                                                   
-                                        </div> 
-
-                                        <div class="card">
-                                            <div class="card-img-top"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="card-body">                                                
-                                                <span class="course-tag">Tag</span>
-                                                <h5 class="course-title">Nameless</h5>                                                
-                                            </div>
-                                            <div class="card-body students-avaliation">
-                                                <div class="rating"> 
-                                                    <span>
-                                                        4.5
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    (1.250)
-                                                </div>
-                                                <div class="total-of-students">
-                                                    <span>5.400</span>
-                                                    Students
-                                                </div>
-                                            </div>
-                                            <div class="card-body course-info">
-                                                <div class="duration"><i class="fa-regular fa-clock"></i> 11h 20min</div>
-                                                <div class="number-of-lectures"><i class="fa-solid fa-calendar-days"></i> 46 Lectures</div>
-                                                <div class="course-level"><i class="fa-sharp fa-solid fa-signal"></i> Advanced </div>
-                                            </div>
-                                            <div class="card-body instructor-info">                                                
-                                                <div class="instructor-img">
-                                                    <i class="fa-solid fa-ban"></i>
-                                                </div>
-                                                <div class="instructor-name">John Doe</div>                                                                                              
-                                                <div class="price">$1.99</div>
-                                            </div>
-                                            <div class="options">
-                                                <a href="#" target="_blank" class="btn btn-outline-primary">
-                                                    More Info
-                                                </a>
-                                                <a href="#" target="_blank" class="btn btn-outline-danger">
-                                                    Buy Course    
-                                                </a>
-                                            </div>                                                                                   
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-img-top"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="card-body">                                                
-                                                <span class="course-tag">Tag</span>
-                                                <h5 class="course-title">Nameless</h5>                                                
-                                            </div>
-                                            <div class="card-body students-avaliation">
-                                                <div class="rating"> 
-                                                    <span>
-                                                        4.5
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    (1.250)
-                                                </div>
-                                                <div class="total-of-students">
-                                                    <span>5.400</span>
-                                                    Students
-                                                </div>
-                                            </div>
-                                            <div class="card-body course-info">
-                                                <div class="duration"><i class="fa-regular fa-clock"></i> 11h 20min</div>
-                                                <div class="number-of-lectures"><i class="fa-solid fa-calendar-days"></i> 46 Lectures</div>
-                                                <div class="course-level"><i class="fa-sharp fa-solid fa-signal"></i> Advanced </div>
-                                            </div>
-                                            <div class="card-body instructor-info">                                                
-                                                <div class="instructor-img">
-                                                    <i class="fa-solid fa-ban"></i>
-                                                </div>
-                                                <div class="instructor-name">John Doe</div>                                                                                              
-                                                <div class="price">$1.99</div>
-                                            </div>
-                                            <div class="options">
-                                                <a href="#" target="_blank" class="btn btn-outline-primary">
-                                                    More Info
-                                                </a>
-                                                <a href="#" target="_blank" class="btn btn-outline-danger">
-                                                    Buy Course    
-                                                </a>
-                                            </div>                                                                                   
-                                        </div>
-                                                                                                                        
+                                    <div class="accordion-body">                    
                                     </div>
                                     <h4 class="accordion-header"></h4>
                                 </div>                              
@@ -486,260 +278,18 @@
                             <div class="accordion-item">                              
                                 <div id="collapseFour" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-
-                                        <div class="card">
-                                            <div class="card-img-top"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="card-body">                                                
-                                                <span class="course-tag">Tag</span>
-                                                <h5 class="course-title">Nameless</h5>                                                
-                                            </div>
-                                            <div class="card-body students-avaliation">
-                                                <div class="rating"> 
-                                                    <span>
-                                                        4.5
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    (1.250)
-                                                </div>
-                                                <div class="total-of-students">
-                                                    <span>5.400</span>
-                                                    Students
-                                                </div>
-                                            </div>
-                                            <div class="card-body course-info">
-                                                <div class="duration"><i class="fa-regular fa-clock"></i> 11h 20min</div>
-                                                <div class="number-of-lectures"><i class="fa-solid fa-calendar-days"></i> 46 Lectures</div>
-                                                <div class="course-level"><i class="fa-sharp fa-solid fa-signal"></i> Advanced </div>
-                                            </div>
-                                            <div class="card-body instructor-info">                                                
-                                                <div class="instructor-img">
-                                                    <i class="fa-solid fa-ban"></i>
-                                                </div>
-                                                <div class="instructor-name">John Doe</div>                                                                                              
-                                                <div class="price">$1.99</div>
-                                            </div>
-                                            <div class="options">
-                                                <a href="#" target="_blank" class="btn btn-outline-primary">
-                                                    More Info
-                                                </a>
-                                                <a href="#" target="_blank" class="btn btn-outline-danger">
-                                                    Buy Course    
-                                                </a>
-                                            </div>                                                                                   
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-img-top"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="card-body">                                                
-                                                <span class="course-tag">Tag</span>
-                                                <h5 class="course-title">Nameless</h5>                                                
-                                            </div>
-                                            <div class="card-body students-avaliation">
-                                                <div class="rating"> 
-                                                    <span>
-                                                        4.5
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    (1.250)
-                                                </div>
-                                                <div class="total-of-students">
-                                                    <span>5.400</span>
-                                                    Students
-                                                </div>
-                                            </div>
-                                            <div class="card-body course-info">
-                                                <div class="duration"><i class="fa-regular fa-clock"></i> 11h 20min</div>
-                                                <div class="number-of-lectures"><i class="fa-solid fa-calendar-days"></i> 46 Lectures</div>
-                                                <div class="course-level"><i class="fa-sharp fa-solid fa-signal"></i> Advanced </div>
-                                            </div>
-                                            <div class="card-body instructor-info">                                                
-                                                <div class="instructor-img">
-                                                    <i class="fa-solid fa-ban"></i>
-                                                </div>
-                                                <div class="instructor-name">John Doe</div>                                                                                              
-                                                <div class="price">$1.99</div>
-                                            </div>
-                                            <div class="options">
-                                                <a href="#" target="_blank" class="btn btn-outline-primary">
-                                                    More Info
-                                                </a>
-                                                <a href="#" target="_blank" class="btn btn-outline-danger">
-                                                    Buy Course    
-                                                </a>
-                                            </div>                                                                                   
-                                        </div>
-                                        
-                                        <div class="card">
-                                            <div class="card-img-top"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="card-body">                                                
-                                                <span class="course-tag">Tag</span>
-                                                <h5 class="course-title">Nameless</h5>                                                
-                                            </div>
-                                            <div class="card-body students-avaliation">
-                                                <div class="rating"> 
-                                                    <span>
-                                                        4.5
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    (1.250)
-                                                </div>
-                                                <div class="total-of-students">
-                                                    <span>5.400</span>
-                                                    Students
-                                                </div>
-                                            </div>
-                                            <div class="card-body course-info">
-                                                <div class="duration"><i class="fa-regular fa-clock"></i> 11h 20min</div>
-                                                <div class="number-of-lectures"><i class="fa-solid fa-calendar-days"></i> 46 Lectures</div>
-                                                <div class="course-level"><i class="fa-sharp fa-solid fa-signal"></i> Advanced </div>
-                                            </div>
-                                            <div class="card-body instructor-info">                                                
-                                                <div class="instructor-img">
-                                                    <i class="fa-solid fa-ban"></i>
-                                                </div>
-                                                <div class="instructor-name">John Doe</div>                                                                                              
-                                                <div class="price">$1.99</div>
-                                            </div>
-                                            <div class="options">
-                                                <a href="#" target="_blank" class="btn btn-outline-primary">
-                                                    More Info
-                                                </a>
-                                                <a href="#" target="_blank" class="btn btn-outline-danger">
-                                                    Buy Course    
-                                                </a>
-                                            </div>                                                                                   
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-img-top"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="card-body">                                                
-                                                <span class="course-tag">Tag</span>
-                                                <h5 class="course-title">Nameless</h5>                                                
-                                            </div>
-                                            <div class="card-body students-avaliation">
-                                                <div class="rating"> 
-                                                    <span>
-                                                        4.5
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    (1.250)
-                                                </div>
-                                                <div class="total-of-students">
-                                                    <span>5.400</span>
-                                                    Students
-                                                </div>
-                                            </div>
-                                            <div class="card-body course-info">
-                                                <div class="duration"><i class="fa-regular fa-clock"></i> 11h 20min</div>
-                                                <div class="number-of-lectures"><i class="fa-solid fa-calendar-days"></i> 46 Lectures</div>
-                                                <div class="course-level"><i class="fa-sharp fa-solid fa-signal"></i> Advanced </div>
-                                            </div>
-                                            <div class="card-body instructor-info">                                                
-                                                <div class="instructor-img">
-                                                    <i class="fa-solid fa-ban"></i>
-                                                </div>
-                                                <div class="instructor-name">John Doe</div>                                                                                              
-                                                <div class="price">$1.99</div>
-                                            </div>
-                                            <div class="options">
-                                                <a href="#" target="_blank" class="btn btn-outline-primary">
-                                                    More Info
-                                                </a>
-                                                <a href="#" target="_blank" class="btn btn-outline-danger">
-                                                    Buy Course    
-                                                </a>
-                                            </div>                                                                                   
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-img-top"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="card-body">                                                
-                                                <span class="course-tag">Tag</span>
-                                                <h5 class="course-title">Nameless</h5>                                                
-                                            </div>
-                                            <div class="card-body students-avaliation">
-                                                <div class="rating"> 
-                                                    <span>
-                                                        4.5
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    (1.250)
-                                                </div>
-                                                <div class="total-of-students">
-                                                    <span>5.400</span>
-                                                    Students
-                                                </div>
-                                            </div>
-                                            <div class="card-body course-info">
-                                                <div class="duration"><i class="fa-regular fa-clock"></i> 11h 20min</div>
-                                                <div class="number-of-lectures"><i class="fa-solid fa-calendar-days"></i> 46 Lectures</div>
-                                                <div class="course-level"><i class="fa-sharp fa-solid fa-signal"></i> Advanced </div>
-                                            </div>
-                                            <div class="card-body instructor-info">                                                
-                                                <div class="instructor-img">
-                                                    <i class="fa-solid fa-ban"></i>
-                                                </div>
-                                                <div class="instructor-name">John Doe</div>                                                                                              
-                                                <div class="price">$1.99</div>
-                                            </div>
-                                            <div class="options">
-                                                <a href="#" target="_blank" class="btn btn-outline-primary">
-                                                    More Info
-                                                </a>
-                                                <a href="#" target="_blank" class="btn btn-outline-danger">
-                                                    Buy Course    
-                                                </a>
-                                            </div>                                                                                   
-                                        </div>
-
-                                        <div class="card">
-                                            <div class="card-img-top"><i class="fa-solid fa-ban"></i></div>
-                                            <div class="card-body">                                                
-                                                <span class="course-tag">Tag</span>
-                                                <h5 class="course-title">Nameless</h5>                                                
-                                            </div>
-                                            <div class="card-body students-avaliation">
-                                                <div class="rating"> 
-                                                    <span>
-                                                        4.5
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </span>
-                                                    (1.250)
-                                                </div>
-                                                <div class="total-of-students">
-                                                    <span>5.400</span>
-                                                    Students
-                                                </div>
-                                            </div>
-                                            <div class="card-body course-info">
-                                                <div class="duration"><i class="fa-regular fa-clock"></i> 11h 20min</div>
-                                                <div class="number-of-lectures"><i class="fa-solid fa-calendar-days"></i> 46 Lectures</div>
-                                                <div class="course-level"><i class="fa-sharp fa-solid fa-signal"></i> Advanced </div>
-                                            </div>
-                                            <div class="card-body instructor-info">                                                
-                                                <div class="instructor-img">
-                                                    <i class="fa-solid fa-ban"></i>
-                                                </div>
-                                                <div class="instructor-name">John Doe</div>                                                                                              
-                                                <div class="price">$1.99</div>
-                                            </div>
-                                            <div class="options">
-                                                <a href="#" target="_blank" class="btn btn-outline-primary">
-                                                    More Info
-                                                </a>
-                                                <a href="#" target="_blank" class="btn btn-outline-danger">
-                                                    Buy Course    
-                                                </a>
-                                            </div>                                                                                   
-                                        </div>
-                                  
                                     </div>
                                 </div>
                                 <h4 class="accordion-header" id="headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"></button>
                                 </h4>
                             </div>                            
-                        </div>                         
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="spinner-border text-danger spinner-custom" style="width: 3rem; height: 3rem;" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>                                              
                     </section>
                 </div>                
             </div>
@@ -931,6 +481,11 @@
     <script type="text/javascript" src="./libs/jQuery/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./libs/slick/slick.min.js"></script>
     <script type="text/javascript" src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/functions-to-populate-courses-info-sections.js"></script>
+    <script type="text/javascript" src="./assets/js/functions-to-dinamize-modal.js"></script>
+    <script type="text/javascript" src="./assets/js/sandbar.js"></script>
+    <script type="text/javascript" src="./assets/js/functions-to-dinamize-courses-info-sections.js"></script>
+    <script type="text/javascript" src="./assets/js/dinamize-students-testimonials-carousel.js"></script>    
     <script type="text/javascript" src="./assets/js/app.js"></script>
 
 </body>

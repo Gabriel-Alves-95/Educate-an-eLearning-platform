@@ -66,3 +66,7 @@
 #courses-info .accordion-button::after {    
     content: "Show Less";
 }
+
+#courses-info .spinner-custom {
+    display: none;   
+}
