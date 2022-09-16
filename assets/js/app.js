@@ -18,5 +18,11 @@ $(document).ready(function(){
   coursesCarouselLeftButton[0].addEventListener('click', () => displayCourseInfoByTag());
   
   coursesCarouselRightButton[0].addEventListener('click', () => displayCourseInfoByTag());
+
+  loginBtn.addEventListener('click', () => showLoginForm());
+
+  registerBtn.addEventListener('click', () => showRegisterForm());
+
+  registerNowBtn.addEventListener('click', () => showRegisterForm());
   
 });
